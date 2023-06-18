@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2 id="title">To-Do List <img src="images/icon.png" alt="todo icon"></h2>
+            <div class="counters-container">
+                <h5 id="tasks-added-counter" class="task-counter">0 Task(s) Added</h5>
+                <hr>
+                <h5 id="complete-task-counter" class="task-counter">0 Completed Task(s)</h5>
+                <hr>
+                <h5 id="incomplete-task-counter" class="task-counter">0 Incomplete Task(s)</h5>
+            </div>
+            <div id="error-message" class="error-message"></div>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <button id="add-task" onclick="taskValidator()">Add Task</button>
+            </div>
+            <ul id="list-container">
+            </ul>
+            <button id="clear-data-btn" class="data-btn" onclick="clearData()">Clear Data</button>
+            <button id="print-data-btn" class="data-btn" onclick="printTaskList()">Print Data</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
